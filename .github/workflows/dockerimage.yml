@@ -17,6 +17,6 @@ jobs:
           USERNAME: ${{ secrets.DOCKER_USERNAME }}
           PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           REGISTRY: "docker.pkg.github.com"
-          IMAGE_NAME: "bmdepesa/url-shortener"
+          IMAGE_NAME: "bmdepesa/url-shortener/url-shortener"
           TAG_NAME: "v0.0.1"
           LATEST: "true"
