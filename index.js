@@ -14,23 +14,11 @@ app.get('/:key', respond);
 app.get('/', index);
 app.listen(port, () => console.log(`Listening on ${port}`));
 
-var lastUpdate = new Date();
-
-function updateCounter() {
-  lastUpdate = new Date();
-}
-
 function index(req, res) {
   res.end('Hello');
 }
 
 function respond(req, res) {
-  var now = new Date();
-  if ( now > lastUpdate + (1 * 60000) ) {
-    readConfig();
-    updatecounter();
-  }
-  
   const key = req.params.key;
   const to = mapping[key];
 
