@@ -26,7 +26,7 @@ function index(req, res) {
 
 function respond(req, res) {
   var now = new Date();
-  if ( now > lastUpdate + (30 * 60000) ) {
+  if ( now > lastUpdate + (1 * 60000) ) {
     readConfig();
     updatecounter();
   }
